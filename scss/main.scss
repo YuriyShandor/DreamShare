@@ -130,7 +130,6 @@ header {
   }
 
   header {
-
     .title_login {
       width: 89%;
       margin: 0 auto;
@@ -184,26 +183,25 @@ header {
   }
 }
 
+.title_heading {
+  font-size: 22px;
+  font-weight: 700;
+  color: #333;
+  margin: 0;
+  margin-top: 100px;
+  margin-bottom: 40px;
+}
+
 .how_works {
   width: inherit;
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: 100px;
-  margin-bottom: 100px;
-
-  #dream_works {
-    font-size: 22px;
-    font-weight: 700;
-    color: #333;
-    margin: 0;
-  }
 
   .steps {
     width: inherit;
     display: flex;
     justify-content: space-between;
-    margin-top: 40px;
 
     .step {
       width: 300px;
@@ -270,9 +268,7 @@ header {
 
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .how_works {
-
     .steps {
-
       .step {
         width: 236px;
         height: 400px;
@@ -286,15 +282,18 @@ header {
 }
 
 @media screen and (max-width: 767px) {
-  .how_works {
+  .title_heading {
+    width: 280px;
+    text-align: center;
     margin-top: 38px;
-    margin-bottom: 38px;
+    margin-bottom: 20px;
+  }
 
+  .how_works {
     .steps {
       height: 740px;
       flex-direction: column;
       justify-content: space-between;
-      margin-top: 20px;
 
       .step {
         width: 300px;
@@ -304,13 +303,147 @@ header {
   }
 }
 
+.meet_partner {
+  width: inherit;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  .partners {
+    width: inherit;
+    display: flex;
+    justify-content: space-between;
+
+    .two_partners {
+      width: 49%;
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+    }
+
+    .partner {
+      width: 225px;
+      height: 250px;
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+
+      .img_partner {
+        width: 120px;
+        height: 120px;
+      }
+
+      .img_icon {
+        width: 40px;
+        height: 40px;
+        position: absolute;
+        top: 45%;
+        left: 60%;
+        cursor: pointer;
+
+        &:hover {
+          opacity: 0.8;
+        }
+      }
+
+      #icon_03 {
+        top: 37%;
+      }
+
+      h1 {
+        font-size: 14px;
+        font-weight: 700;
+        color: #333;
+        margin: 0;
+        margin-top: 20px;
+      }
+
+      p {
+        font-family: Roboto;
+        font-size: 14px;
+        font-weight: 300;
+        color: #666;
+        text-align: center;
+        margin: 0;
+        margin-top: 20px;
+      }
+    }
+  }
+
+  .other_partners {
+    width: 190px;
+    height: 38px;
+    border: 2px solid #ff4e50;
+    border-radius: 20px;
+    margin-top: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+
+    span {
+      font-size: 14px;
+      font-weight: 700;
+      color: #ff4e50;
+    }
+
+    &:hover {
+      background: #ff4e50;
+
+      span {
+        color: #fff;
+      }
+    }
+  }
+}
 
 @media screen and (min-width: 768px) and (max-width: 1199px) {
+  .meet_partner {
+    .partners {
+      display: flex;
+      flex-direction: column;
 
+      .two_partners {
+        width: inherit;
+        display: flex;
+        justify-content: center;
+        align-items: baseline;
+        margin-bottom: 15px;
+      }
+    }
+
+    .other_partners {
+      margin-top: 15px;
+    }
+  }
 }
 
 @media screen and (max-width: 767px) {
+  .meet_partner {
+    .partners {
+      display: flex;
+      flex-direction: column;
 
+      .two_partners {
+        width: inherit;
+        display: flex;
+        justify-content: center;
+        align-items: baseline;
+        flex-wrap: wrap;
+
+        .partner {
+          margin-bottom: 15px;
+        }
+      }
+    }
+
+    .other_partners {
+      margin-top: 0;
+      width: 280px;
+    }
+  }
 }
 
 
