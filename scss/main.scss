@@ -539,13 +539,97 @@ header {
   }
 }
 
+.discover_activity {
+  width: inherit;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 
-@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .title_heading {
+    margin: 0;
+    margin-top: 70px;
+    margin-bottom: 35px;
+  }
 
+  p {
+    font-family: Roboto;
+    font-size: 18px;
+    font-weight: 300;
+    color: #333;
+    margin: 0;
+  }
+
+  .discover_partner {
+    width: 410px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 40px;
+    margin-bottom: 100px;
+
+    input {
+      width: 240px;
+      height: 40px;
+      border: 1px solid #ccc;
+      border-radius: 3px;
+      outline-color: #333;
+      padding-left: 15px;
+      font-family: Roboto;
+      font-size: 14px;
+      font-weight: 300;
+    }
+
+    .search_partners {
+      width: 160px;
+      height: 40px;
+      background: #ff4e50;
+      border-radius: 20px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+
+      span {
+        font-size: 14px;
+        font-weight: 700;
+        color: #fff;
+      }
+
+      &:hover {
+        opacity: 0.9;
+      }
+    }
+  }
 }
 
-@media screen and (max-width: 767px) {
 
+@media screen and (max-width: 767px) {
+  .discover_activity {
+    .title_heading {
+      margin: 0;
+      margin-top: 40px;
+      margin-bottom: 20px;
+    }
+
+    .discover_partner {
+      width: auto;
+      height: 90px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+      margin-top: 15px;
+      margin-bottom: 40px;
+
+      input {
+        width: 280px;
+      }
+
+      .search_partners {
+        width: 280px;
+      }
+    }
+  }
 }
 
 
