@@ -184,12 +184,124 @@ header {
   }
 }
 
-@media screen and (min-width: 768px) and (max-width: 1199px) {
+.how_works {
+  width: inherit;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 100px;
+  margin-bottom: 100px;
 
+  #dream_works {
+    font-size: 22px;
+    font-weight: 700;
+    color: #333;
+    margin: 0;
+  }
+
+  .steps {
+    width: inherit;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+
+    .step {
+      width: 300px;
+      height: 400px;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      border-radius: 5px;
+
+      .step_cont {
+        width: 260px;
+        margin: 0 auto;
+      }
+
+      .step_btn {
+        width: 70px;
+        height: 20px;
+        border-radius: 10px;
+        background: #ff4e50;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        span {
+          font-size: 10px;
+          font-weight: 400;
+          color: #fff;
+          text-transform: uppercase;
+          cursor: pointer;
+
+          &:hover {
+            opacity: 0.9;
+          }
+        }
+      }
+
+      h1 {
+        font-size: 24px;
+        font-weight: 700;
+        color: #fff;
+      }
+
+      p {
+        font-family: Roboto;
+        font-size: 14px;
+        font-weight: 300;
+        color: #ccc;
+      }
+    }
+
+    .step_01 {
+      background: url(../img/step_01.jpg) no-repeat center / cover;
+    }
+
+    .step_02 {
+      background: url(../img/step_02.jpg) no-repeat center / cover;
+    }
+
+    .step_03 {
+      background: url(../img/step_03.jpg) no-repeat center / cover;
+    }
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .how_works {
+
+    .steps {
+
+      .step {
+        width: 236px;
+        height: 400px;
+
+        .step_cont {
+          width: 205px;
+        }
+      }
+    }
+  }
 }
 
 @media screen and (max-width: 767px) {
+  .how_works {
+    margin-top: 38px;
+    margin-bottom: 38px;
 
+    .steps {
+      height: 740px;
+      flex-direction: column;
+      justify-content: space-between;
+      margin-top: 20px;
+
+      .step {
+        width: 300px;
+        height: 240px;
+      }
+    }
+  }
 }
 
 
