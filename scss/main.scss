@@ -446,13 +446,97 @@ header {
   }
 }
 
+.holiday_activity {
+  width: inherit;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  .activities {
+    width: inherit;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  .activ_high {
+    width: 300px;
+    height: 310px;
+
+    span {
+      width: 190px;
+      text-align: center;
+    }
+  }
+
+  .activ_wide {
+    width: 620px;
+    height: 310px;
+  }
+
+  .activity {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    margin-bottom: 20px;
+
+    span {
+      font-size: 22px;
+      font-weight: 700;
+      color: #fff;
+    }
+  }
+
+  .activity_01 {
+    background: url(../img/activity_01.jpg) no-repeat center / cover;
+  }
+
+  .activity_02 {
+    background: url(../img/activity_02.jpg) no-repeat center / cover;
+  }
+
+  .activity_03 {
+    background: url(../img/activity_03.jpg) no-repeat center / cover;
+  }
+
+  .activity_04 {
+    background: url(../img/activity_04.jpg) no-repeat center / cover;
+  }
+
+  .activity_05 {
+    background: url(../img/activity_05.jpg) no-repeat center / cover;
+  }
+
+  .activity_06 {
+    background: url(../img/activity_06.jpg) no-repeat center / cover;
+  }
+
+  .activity_07 {
+    background: url(../img/activity_07.jpg) no-repeat center / cover;
+  }
+}
 
 @media screen and (min-width: 768px) and (max-width: 1199px) {
+  .holiday_activity {
+    .activ_high {
+      width: 236px;
+    }
 
+    .activ_wide {
+      width: 490px;
+    }
+  }
 }
 
 @media screen and (max-width: 767px) {
-
+  .holiday_activity {
+    .activity {
+      width: 300px;
+      height: 120px;
+      margin-bottom: 10px;
+    }
+  }
 }
 
 
