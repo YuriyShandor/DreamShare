@@ -480,6 +480,7 @@ header {
     align-items: center;
     border-radius: 5px;
     margin-bottom: 20px;
+    cursor: pointer;
 
     span {
       font-size: 22px;
@@ -632,20 +633,131 @@ header {
   }
 }
 
+footer {
+  hr {
+    height: 4px;
+    background: #ff4e50;
+    border: none;
+    margin: 0;
+  }
+
+  .footer_info {
+    width: inherit;
+    height: 155px;
+    display: flex;
+    margin-top: 40px;
+
+    h1 {
+      font-size: 16px;
+      font-weight: 700;
+      color: #ff4e50;
+      text-transform: uppercase;
+      margin: 0;
+    }
+
+    span {
+      font-size: 14px;
+      font-weight: 700;
+      color: #333;
+    }
+
+    .about_us {
+      margin-left: 115px;
+
+      ul {
+        margin: 0;
+        margin-top: 20px;
+        padding: 0;
+
+        li {
+          list-style: none;
+          line-height: 1.5;
+
+          a {
+            text-decoration: none;
+            font-family: Roboto;
+            font-size: 14px;
+            font-weight: 300;
+            color: #666;
+            cursor: pointer;
+
+            &:hover {
+              color: red;
+              font-weight: 700;
+            }
+          }
+        }
+      }
+    }
+
+    #partn {
+      margin-left: 170px;
+    }
+
+    #design {
+      margin-left: auto;
+    }
+  }
+}
 
 @media screen and (min-width: 768px) and (max-width: 1199px) {
+  footer {
 
+    .footer_info {
+
+      h1 {
+        margin-left: 30px;
+      }
+
+      .about_us {
+        margin-left: 100px;
+      }
+
+      #partn {
+        margin-left: 105px;
+      }
+
+      #design {
+        margin-left: auto;
+        margin-right: 30px;
+      }
+    }
+  }
 }
 
 @media screen and (max-width: 767px) {
+  footer {
 
-}
+    .footer_info {
+      width: inherit;
+      height: 170px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-between;
+      margin-top: 20px;
 
+      .about_us {
+        margin-left: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
 
-@media screen and (min-width: 768px) and (max-width: 1199px) {
+        ul {
+          margin-top: 0;
+          display: flex;
+        }
+      }
 
-}
+      #partn {
+        margin-left: 0;
+      }
 
-@media screen and (max-width: 767px) {
-
+      #design {
+        margin-left: 0;
+        margin-bottom: 17px;
+        transform: translateX(-15px);
+      }
+    }
+  }
 }
