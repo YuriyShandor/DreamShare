@@ -360,7 +360,32 @@ header {
 }
 
 @media screen and (max-width: 767px) {
+  .how_works {
+    .steps {
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column;
+      -webkit-box-pack: justify;
+          -ms-flex-pack: justify;
+              justify-content: space-between;
 
+      .step {
+        width: 400px;
+        height: 270px;
+        margin: 0 auto;
+        margin-bottom: 20px;
+
+        h1 {
+          width: 100%;
+        }
+
+        p {
+          width: 115%;
+        }
+      }
+    }
+  }
 }
 
 @media screen and (max-width: 567px) {
@@ -373,15 +398,6 @@ header {
 
   .how_works {
     .steps {
-      height: 740px;
-      -webkit-box-orient: vertical;
-      -webkit-box-direction: normal;
-          -ms-flex-direction: column;
-              flex-direction: column;
-      -webkit-box-pack: justify;
-          -ms-flex-pack: justify;
-              justify-content: space-between;
-
       .step {
         width: 300px;
         height: 240px;
@@ -560,10 +576,6 @@ header {
   }
 }
 
-@media screen and (max-width: 767px) {
-
-}
-
 @media screen and (max-width: 567px) {
   .meet_partner {
     .partners {
@@ -713,7 +725,12 @@ header {
 }
 
 @media screen and (max-width: 767px) {
-
+  .holiday_activity {
+    .activities {
+      -ms-flex-pack: distribute;
+          justify-content: space-around;
+    }
+  }
 }
 
 @media screen and (max-width: 567px) {
@@ -809,10 +826,6 @@ header {
       }
     }
   }
-}
-
-@media screen and (max-width: 767px) {
-
 }
 
 @media screen and (max-width: 567px) {
@@ -926,9 +939,7 @@ footer {
 
 @media screen and (max-width: 991px) {
   footer {
-
     .footer_info {
-
       h1 {
         margin-left: 30px;
       }
@@ -950,7 +961,26 @@ footer {
 }
 
 @media screen and (max-width: 767px) {
+  footer {
+    .footer_info {
+      h1 {
+        margin-left: 15px;
+      }
 
+      .about_us {
+        margin-left: 50px;
+      }
+
+      #partn {
+        margin-left: 50px;
+      }
+
+      #design {
+        margin-left: auto;
+        margin-right: 15px;
+      }
+    }
+  }
 }
 
 @media screen and (max-width: 567px) {

@@ -427,15 +427,8 @@ header .share_dreams .find_partner:hover {
   }
 }
 
-@media screen and (max-width: 567px) {
-  .title_heading {
-    width: 280px;
-    text-align: center;
-    margin-top: 38px;
-    margin-bottom: 20px;
-  }
+@media screen and (max-width: 767px) {
   .how_works .steps {
-    height: 740px;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
@@ -443,6 +436,27 @@ header .share_dreams .find_partner:hover {
     -webkit-box-pack: justify;
     -ms-flex-pack: justify;
     justify-content: space-between;
+  }
+  .how_works .steps .step {
+    width: 400px;
+    height: 270px;
+    margin: 0 auto;
+    margin-bottom: 20px;
+  }
+  .how_works .steps .step h1 {
+    width: 100%;
+  }
+  .how_works .steps .step p {
+    width: 115%;
+  }
+}
+
+@media screen and (max-width: 567px) {
+  .title_heading {
+    width: 280px;
+    text-align: center;
+    margin-top: 38px;
+    margin-bottom: 20px;
   }
   .how_works .steps .step {
     width: 300px;
@@ -755,6 +769,13 @@ header .share_dreams .find_partner:hover {
   }
 }
 
+@media screen and (max-width: 767px) {
+  .holiday_activity .activities {
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+  }
+}
+
 @media screen and (max-width: 567px) {
   .holiday_activity .activity {
     width: 300px;
@@ -963,6 +984,22 @@ footer .footer_info #design {
   footer .footer_info #design {
     margin-left: auto;
     margin-right: 30px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  footer .footer_info h1 {
+    margin-left: 15px;
+  }
+  footer .footer_info .about_us {
+    margin-left: 50px;
+  }
+  footer .footer_info #partn {
+    margin-left: 50px;
+  }
+  footer .footer_info #design {
+    margin-left: auto;
+    margin-right: 15px;
   }
 }
 
