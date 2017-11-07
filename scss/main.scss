@@ -1,32 +1,31 @@
+// to compile...
+
+@import "./_components/_Montserrat.scss";
+@import "./_components/_Roboto.scss";
+
 * {
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   /*border: 1px solid red;*/
-}
-
-@font-face {
-  font-family: Montserrat;
-  src: url(../fonts/Montserrat-Light.otf);
-}
-
-@font-face {
-  font-family: Roboto;
-  src: url(../fonts/Roboto-Light.ttf);
 }
 
 body {
   font-family: Montserrat, Arial sans-serif;
   padding: 0;
   margin: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 .container {
   width: 940px;
   margin: 0 auto;
   position: relative;
-  display: flex;
-  flex-direction: column;
 }
 
 header {
@@ -37,20 +36,28 @@ header {
   .title_login {
     width: 100%;
     height: auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     margin-top: 38px;
 
-    h1 {
-      margin: 0;
+    .dreamshare-logo {
       font-size: 20px;
       font-weight: 700;
       color: #fff;
       text-transform: uppercase;
+      text-decoration: none;
     }
 
     .login {
+      display: -webkit-box;
+      display: -ms-flexbox;
       display: flex;
 
       a {
@@ -63,10 +70,18 @@ header {
       .sign_up {
         width: 90px;
         height: 35px;
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
-        align-items: center;
-        justify-content: center;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
         cursor: pointer;
+        -webkit-transition: all, 0.3s;
+        transition: all, 0.3s;
 
         &:hover {
           border: 2px solid #fff;
@@ -79,13 +94,20 @@ header {
   .share_dreams {
     margin: auto;
     margin-top: 143px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     overflow-x: hidden;
 
     h1 {
-      width: 500px;
+      width: 505px;
       font-size: 52px;
       font-weight: 700;
       color: #fff;
@@ -95,11 +117,12 @@ header {
     }
 
     p {
-      margin-top: 30px;
+      margin: 30px auto;
       font-family: Roboto;
       font-size: 24px;
       font-weight: 300;
       color: #fff;
+      text-align: center;
     }
 
 
@@ -108,10 +131,17 @@ header {
       height: 40px;
       background: #ff4e50;
       border-radius: 20px;
+      display: -webkit-box;
+      display: -ms-flexbox;
       display: flex;
-      align-items: center;
-      justify-content: center;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center;
       cursor: pointer;
+      -webkit-transition: opacity 0.5s;
       transition: opacity 0.5s;
 
       span {
@@ -127,7 +157,7 @@ header {
   }
 }
 
-@media screen and (min-width: 767px) and (max-width: 1199px) {
+@media screen and (max-width: 991px) {
   .container {
     width: 748px;
   }
@@ -143,6 +173,12 @@ header {
 
 @media screen and (max-width: 767px) {
   .container {
+    width: 530px;
+  }
+}
+
+@media screen and (max-width: 567px) {
+  .container {
     width: 300px;
   }
 
@@ -153,8 +189,13 @@ header {
       width: auto;
       height: auto;
       margin: 0 auto;
+      display: -webkit-box;
+      display: -ms-flexbox;
       display: flex;
-      flex-direction: column-reverse;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: reverse;
+          -ms-flex-direction: column-reverse;
+              flex-direction: column-reverse;
 
       h1 {
         margin-top: 110px;
@@ -198,23 +239,42 @@ header {
 
 .how_works {
   width: inherit;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 
   .steps {
     width: inherit;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: space-between;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
 
     .step {
       width: 300px;
       height: 400px;
+      display: -webkit-box;
+      display: -ms-flexbox;
       display: flex;
-      flex-direction: column;
-      justify-content: flex-end;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column;
+      -webkit-box-pack: end;
+          -ms-flex-pack: end;
+              justify-content: flex-end;
       border-radius: 5px;
-      transition: opacity 1s;
+      -webkit-transition: opacity 0.5s;
+      transition: opacity 0.5s;
       overflow-x: hidden;
 
       &:hover {
@@ -231,9 +291,15 @@ header {
         height: 20px;
         border-radius: 10px;
         background: #ff4e50;
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
-        justify-content: center;
-        align-items: center;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
 
         span {
           font-size: 10px;
@@ -241,7 +307,8 @@ header {
           color: #fff;
           text-transform: uppercase;
           cursor: pointer;
-          transition: opacity 1s;
+          -webkit-transition: opacity 0.5s;
+          transition: opacity 0.5s;
 
           &:hover {
             opacity: 0.7;
@@ -277,7 +344,7 @@ header {
   }
 }
 
-@media screen and (min-width: 767px) and (max-width: 1199px) {
+@media screen and (max-width: 991px) {
   .how_works {
     .steps {
       .step {
@@ -293,6 +360,10 @@ header {
 }
 
 @media screen and (max-width: 767px) {
+
+}
+
+@media screen and (max-width: 567px) {
   .title_heading {
     width: 280px;
     text-align: center;
@@ -303,8 +374,13 @@ header {
   .how_works {
     .steps {
       height: 740px;
-      flex-direction: column;
-      justify-content: space-between;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column;
+      -webkit-box-pack: justify;
+          -ms-flex-pack: justify;
+              justify-content: space-between;
 
       .step {
         width: 300px;
@@ -316,36 +392,63 @@ header {
 
 .meet_partner {
   width: inherit;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 
   .partners {
     width: inherit;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: space-between;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
 
     .two_partners {
       width: 49%;
+      display: -webkit-box;
+      display: -ms-flexbox;
       display: flex;
-      justify-content: space-between;
-      align-items: baseline;
+      -webkit-box-pack: justify;
+          -ms-flex-pack: justify;
+              justify-content: space-between;
+      -webkit-box-align: baseline;
+          -ms-flex-align: baseline;
+              align-items: baseline;
     }
 
     .partner {
       width: 225px;
       height: 250px;
       position: relative;
+      display: -webkit-box;
+      display: -ms-flexbox;
       display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column;
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
       overflow-x: hidden;
 
       .img_partner {
         width: 120px;
         height: 120px;
-        transition: opacity 1s;
+        -webkit-transition: opacity 0.5s;
+        transition: opacity 0.5s;
 
         &:hover {
           opacity: 0.9;
@@ -359,7 +462,8 @@ header {
         top: 45%;
         left: 60%;
         cursor: pointer;
-        transition: opacity 1s;
+        -webkit-transition: opacity 0.5s;
+        transition: opacity 0.5s;
 
         &:hover {
           opacity: 0.8;
@@ -396,9 +500,15 @@ header {
     border: 2px solid #ff4e50;
     border-radius: 20px;
     margin-top: 35px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     cursor: pointer;
     overflow-x: hidden;
 
@@ -418,17 +528,28 @@ header {
   }
 }
 
-@media screen and (min-width: 767px) and (max-width: 1199px) {
+@media screen and (max-width: 991px) {
   .meet_partner {
     .partners {
+      display: -webkit-box;
+      display: -ms-flexbox;
       display: flex;
-      flex-direction: column;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column;
 
       .two_partners {
         width: inherit;
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
-        justify-content: center;
-        align-items: baseline;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+        -webkit-box-align: baseline;
+            -ms-flex-align: baseline;
+                align-items: baseline;
         margin-bottom: 15px;
       }
     }
@@ -440,17 +561,33 @@ header {
 }
 
 @media screen and (max-width: 767px) {
+
+}
+
+@media screen and (max-width: 567px) {
   .meet_partner {
     .partners {
+      display: -webkit-box;
+      display: -ms-flexbox;
       display: flex;
-      flex-direction: column;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column;
 
       .two_partners {
         width: inherit;
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
-        justify-content: center;
-        align-items: baseline;
-        flex-wrap: wrap;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+        -webkit-box-align: baseline;
+            -ms-flex-align: baseline;
+                align-items: baseline;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
 
         .partner {
           margin-bottom: 15px;
@@ -467,15 +604,27 @@ header {
 
 .holiday_activity {
   width: inherit;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 
   .activities {
     width: inherit;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
   }
 
   .activ_high {
@@ -494,14 +643,21 @@ header {
   }
 
   .activity {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     border-radius: 5px;
     margin-bottom: 20px;
     cursor: pointer;
     overflow-x: hidden;
-    transition: opacity 1s;
+    -webkit-transition: opacity 0.5s;
+    transition: opacity 0.5s;
 
 
     &:hover {
@@ -544,7 +700,7 @@ header {
   }
 }
 
-@media screen and (min-width: 767px) and (max-width: 1199px) {
+@media screen and (max-width: 991px) {
   .holiday_activity {
     .activ_high {
       width: 236px;
@@ -557,6 +713,10 @@ header {
 }
 
 @media screen and (max-width: 767px) {
+
+}
+
+@media screen and (max-width: 567px) {
   .holiday_activity {
     .activity {
       width: 300px;
@@ -568,9 +728,16 @@ header {
 
 .discover_activity {
   width: inherit;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 
   .title_heading {
     margin: 0;
@@ -588,9 +755,15 @@ header {
 
   .discover_partner {
     width: 410px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     margin-top: 40px;
     margin-bottom: 100px;
     overflow-x: hidden;
@@ -612,10 +785,18 @@ header {
       height: 40px;
       background: #ff4e50;
       border-radius: 20px;
+      display: -webkit-box;
+      display: -ms-flexbox;
       display: flex;
-      align-items: center;
-      justify-content: center;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center;
       cursor: pointer;
+      -webkit-transition: all, 0.5s;
+      transition: all, 0.5s;
 
       span {
         font-size: 14px;
@@ -630,8 +811,11 @@ header {
   }
 }
 
-
 @media screen and (max-width: 767px) {
+
+}
+
+@media screen and (max-width: 567px) {
   .discover_activity {
     .title_heading {
       margin: 0;
@@ -642,10 +826,19 @@ header {
     .discover_partner {
       width: auto;
       height: 90px;
+      display: -webkit-box;
+      display: -ms-flexbox;
       display: flex;
-      flex-direction: column;
-      justify-content: space-between;
-      align-items: center;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column;
+      -webkit-box-pack: justify;
+          -ms-flex-pack: justify;
+              justify-content: space-between;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
       margin-top: 15px;
       margin-bottom: 40px;
 
@@ -671,6 +864,8 @@ footer {
   .footer_info {
     width: inherit;
     height: 155px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     margin-top: 40px;
 
@@ -707,6 +902,8 @@ footer {
             font-weight: 300;
             color: #666;
             cursor: pointer;
+            -webkit-transition: all, 0.3s;
+            transition: all, 0.3s;
 
             &:hover {
               color: red;
@@ -727,7 +924,7 @@ footer {
   }
 }
 
-@media screen and (min-width: 767px) and (max-width: 1199px) {
+@media screen and (max-width: 991px) {
   footer {
 
     .footer_info {
@@ -753,28 +950,52 @@ footer {
 }
 
 @media screen and (max-width: 767px) {
+
+}
+
+@media screen and (max-width: 567px) {
   footer {
 
     .footer_info {
       width: inherit;
       height: 170px;
+      display: -webkit-box;
+      display: -ms-flexbox;
       display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: space-between;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
+      -webkit-box-pack: justify;
+          -ms-flex-pack: justify;
+              justify-content: space-between;
       margin-top: 20px;
 
       .about_us {
         margin-left: 0;
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
-        flex-direction: column;
-        align-items: center;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
 
         ul {
           margin-top: 0;
           width: 200px;
+          display: -webkit-box;
+          display: -ms-flexbox;
           display: flex;
-          justify-content: space-between;
+          -webkit-box-pack: justify;
+              -ms-flex-pack: justify;
+                  justify-content: space-between;
         }
       }
 
@@ -785,7 +1006,8 @@ footer {
       #design {
         margin-left: 0;
         margin-bottom: 17px;
-        transform: translateX(-15px);
+        -webkit-transform: translateX(-15px);
+                transform: translateX(-15px);
       }
     }
   }
