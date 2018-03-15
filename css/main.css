@@ -117,6 +117,23 @@ header {
   width: 100%;
   height: 700px;
   background: url(../img/banner.jpg) no-repeat center/cover;
+  background-attachment: fixed;
+  position: relative;
+}
+
+header:after {
+  display: block;
+  content: '';
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+header * {
+  z-index: 10;
 }
 
 header .title_login {
@@ -168,13 +185,14 @@ header .title_login .login .sign_up {
   -ms-flex-pack: center;
   justify-content: center;
   cursor: pointer;
+  border: 2px solid transparent;
+  border-radius: 20px;
   -webkit-transition: all, 0.3s;
   transition: all, 0.3s;
 }
 
 header .title_login .login .sign_up:hover {
   border: 2px solid #fff;
-  border-radius: 20px;
 }
 
 header .share_dreams {
@@ -227,23 +245,26 @@ header .share_dreams .find_partner {
   -ms-flex-pack: center;
   justify-content: center;
   cursor: pointer;
-  -webkit-transition: opacity 0.5s;
-  transition: opacity 0.5s;
+  -webkit-transition: all, .5s;
+  transition: all, .5s;
 }
 
 header .share_dreams .find_partner span {
   font-size: 14px;
-  font-weight: 700;
+  font-weight: 500;
   color: #fff;
 }
 
 header .share_dreams .find_partner:hover {
-  opacity: 0.9;
+  background: #ff1b1e;
 }
 
 @media screen and (max-width: 991px) {
   .container {
     width: 748px;
+  }
+  header {
+    background-attachment: scroll;
   }
   header .title_login {
     width: 89%;
@@ -586,12 +607,16 @@ header .share_dreams .find_partner:hover {
   align-items: center;
   cursor: pointer;
   overflow-x: hidden;
+  -webkit-transition: all, .5s;
+  transition: all, .5s;
 }
 
 .meet_partner .other_partners span {
   font-size: 14px;
   font-weight: 700;
   color: #ff4e50;
+  -webkit-transition: all, .5s;
+  transition: all, .5s;
 }
 
 .meet_partner .other_partners:hover {
@@ -866,7 +891,7 @@ header .share_dreams .find_partner:hover {
 }
 
 .discover_activity .discover_partner .search_partners:hover {
-  opacity: 0.9;
+  background: #ff1b1e;
 }
 
 @media screen and (max-width: 567px) {
