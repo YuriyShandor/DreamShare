@@ -1,97 +1,31 @@
-@font-face {
-  font-family: Montserrat;
-  src: url(../fonts/Montserrat/Montserrat-Black.ttf);
-  font-weight: 900;
-}
-
-@font-face {
-  font-family: Montserrat;
-  src: url(../fonts/Montserrat/Montserrat-ExtraBold.ttf);
-  font-weight: 800;
-}
-
-@font-face {
-  font-family: Montserrat;
-  src: url(../fonts/Montserrat/Montserrat-Bold.ttf);
-  font-weight: 700;
-}
-
-@font-face {
-  font-family: Montserrat;
-  src: url(../fonts/Montserrat/Montserrat-SemiBold.ttf);
-  font-weight: 600;
-}
-
-@font-face {
-  font-family: Montserrat;
-  src: url(../fonts/Montserrat/Montserrat-Medium.ttf);
-  font-weight: 500;
-}
-
-@font-face {
-  font-family: Montserrat;
-  src: url(../fonts/Montserrat/Montserrat-Regular.ttf);
-  font-weight: 400;
-}
-
-@font-face {
-  font-family: Montserrat;
-  src: url(../fonts/Montserrat/Montserrat-Light.ttf);
-  font-weight: 300;
-}
-
-@font-face {
-  font-family: Montserrat;
-  src: url(../fonts/Montserrat/Montserrat-ExtraLight.ttf);
-  font-weight: 200;
-}
-
-@font-face {
-  font-family: Montserrat;
-  src: url(../fonts/Montserrat/Montserrat-Thin.ttf);
-  font-weight: 100;
-}
-
-@font-face {
-  font-family: Roboto;
-  src: url(../fonts/Roboto/Roboto-Black.ttf);
-  font-weight: 900;
-}
-
-@font-face {
-  font-family: Roboto;
-  src: url(../fonts/Roboto/Roboto-Bold.ttf);
-  font-weight: 700;
-}
-
-@font-face {
-  font-family: Roboto;
-  src: url(../fonts/Roboto/Roboto-Medium.ttf);
-  font-weight: 500;
-}
-
-@font-face {
-  font-family: Roboto;
-  src: url(../fonts/Roboto/Roboto-Regular.ttf);
-  font-weight: 400;
-}
-
-@font-face {
-  font-family: Roboto;
-  src: url(../fonts/Roboto/Roboto-Light.ttf);
-  font-weight: 300;
-}
-
-@font-face {
-  font-family: Roboto;
-  src: url(../fonts/Roboto/Roboto-Thin.ttf);
-  font-weight: 100;
-}
-
 * {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   /*border: 1px solid red;*/
+}
+
+@font-face {
+  font-family: Montserrat;
+  src: url(../fonts/Montserrat-Bold.ttf);
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: Montserrat;
+  src: url(../fonts/Montserrat-Medium.ttf);
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: Montserrat;
+  src: url(../fonts/Montserrat-Regular.ttf);
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: Roboto;
+  src: url(../fonts/Roboto-Light.ttf);
+  font-weight: 300;
 }
 
 body {
@@ -573,7 +507,7 @@ header .share_dreams .find_partner:hover {
   top: 37%;
 }
 
-.meet_partner .partners .partner h1 {
+.meet_partner .partners .partner h4 {
   font-size: 14px;
   font-weight: 700;
   color: #333;
@@ -955,7 +889,7 @@ footer .footer_info {
   margin-top: 40px;
 }
 
-footer .footer_info h1 {
+footer .footer_info h3 {
   font-size: 16px;
   font-weight: 700;
   color: #ff4e50;
@@ -1009,7 +943,7 @@ footer .footer_info #design {
 }
 
 @media screen and (max-width: 991px) {
-  footer .footer_info h1 {
+  footer .footer_info h3 {
     margin-left: 30px;
   }
   footer .footer_info .about_us {
@@ -1025,7 +959,7 @@ footer .footer_info #design {
 }
 
 @media screen and (max-width: 767px) {
-  footer .footer_info h1 {
+  footer .footer_info h3 {
     margin-left: 15px;
   }
   footer .footer_info .about_us {

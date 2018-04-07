@@ -1,12 +1,33 @@
 // to compile...
 
-@import "./_components/_Montserrat.scss";
-@import "./_components/_Roboto.scss";
-
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   /*border: 1px solid red;*/
+}
+
+@font-face {
+  font-family: Montserrat;
+  src: url(../fonts/Montserrat-Bold.ttf);
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: Montserrat;
+  src: url(../fonts/Montserrat-Medium.ttf);
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: Montserrat;
+  src: url(../fonts/Montserrat-Regular.ttf);
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: Roboto;
+  src: url(../fonts/Roboto-Light.ttf);
+  font-weight: 300;
 }
 
 body {
@@ -510,7 +531,7 @@ header {
         top: 37%;
       }
 
-      h1 {
+      h4 {
         font-size: 14px;
         font-weight: 700;
         color: #333;
@@ -916,7 +937,7 @@ footer {
     display: flex;
     margin-top: 40px;
 
-    h1 {
+    h3 {
       font-size: 16px;
       font-weight: 700;
       color: #ff4e50;
@@ -974,7 +995,7 @@ footer {
 @media screen and (max-width: 991px) {
   footer {
     .footer_info {
-      h1 {
+      h3 {
         margin-left: 30px;
       }
 
@@ -997,7 +1018,7 @@ footer {
 @media screen and (max-width: 767px) {
   footer {
     .footer_info {
-      h1 {
+      h3 {
         margin-left: 15px;
       }
 
