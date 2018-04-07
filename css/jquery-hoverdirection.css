@@ -1,4 +1,4 @@
-.portfolio-item__discr {
+.activity-hover {
 -webkit-transform: translate3d(-100%, 0, 0);
 -webkit-animation-duration: 0.3s;
 -webkit-animation-timing-function: ease-out;
@@ -13,38 +13,38 @@ animation-timing-function: ease-out;
 animation-fill-mode: forwards;
 }
 /* Top */
-.portfolio-item__inside.hover-enter-top .portfolio-item__discr {
+.activity.hover-enter-top .activity-hover {
 -webkit-animation-name: slide_in_top;
 animation-name: slide_in_top;
 }
-.portfolio-item__inside.hover-leave-top .portfolio-item__discr {
+.activity.hover-leave-top .activity-hover {
 -webkit-animation-name: slide_out_top;
 animation-name: slide_out_top;
 }
 /* Right */
-.portfolio-item__inside.hover-enter-right .portfolio-item__discr {
+.activity.hover-enter-right .activity-hover {
 -webkit-animation-name: slide_in_right;
 animation-name: slide_in_right;
 }
-.portfolio-item__inside.hover-leave-right .portfolio-item__discr {
+.activity.hover-leave-right .activity-hover {
 -webkit-animation-name: slide_out_right;
 animation-name: slide_out_right;
 }
 /* Bottom */
-.portfolio-item__inside.hover-enter-bottom .portfolio-item__discr {
+.activity.hover-enter-bottom .activity-hover {
 -webkit-animation-name: slide_in_bottom;
 animation-name: slide_in_bottom;
 }
-.portfolio-item__inside.hover-leave-bottom .portfolio-item__discr {
+.activity.hover-leave-bottom .activity-hover {
 -webkit-animation-name: slide_out_bottom;
 animation-name: slide_out_bottom;
 }
 /* Left */
-.portfolio-item__inside.hover-enter-left .portfolio-item__discr {
+.activity.hover-enter-left .activity-hover {
 -webkit-animation-name: slide_in_left;
 animation-name: slide_in_left;
 }
-.portfolio-item__inside.hover-leave-left .portfolio-item__discr {
+.activity.hover-leave-left .activity-hover {
 -webkit-animation-name: slide_out_left;
 animation-name: slide_out_left;
 }

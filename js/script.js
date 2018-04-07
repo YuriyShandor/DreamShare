@@ -5,4 +5,6 @@ $(document).ready(function () {
     once: true,
     disable: window.innerWidth < 991
   });
+
+  $('.activity').hoverDirection();
 });
